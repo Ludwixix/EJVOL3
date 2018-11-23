@@ -24,7 +24,7 @@
 //   // Each interation will add 1 to both number and counter.
 //   number = number +1
 //   counter = counter +1
-//   // First if loop will return fizzbuzz if number is divislb by 3 and 5
+//   // loop will return fizzbuzz if number is divislb by 3 and 5
 //   if (number % 3 == 0 && number % 5 == 0) { console.log("FIZZBUZZ")}
 //   // loop will return fizz when number is divisble by 3
 //   else if (number % 3 == 0) { console.log("FIZZ")}
@@ -39,7 +39,7 @@
 
 //Challenge 3
 //CHESSBOARD
-
+//
 // let grid2 = " # # # #"
 // let grid1 = "# # # # "
 // let counter = 0
@@ -57,7 +57,7 @@
 // //Challenge 4
 // // minimum
 //
-//creating my function named min which has 2 parameters.
+// creating my function named min which has 2 parameters.
 // function min (arg1, arg2){
 //   // Math.min takes 2 arguments from the min function and logs the smaller number.
 //   console.log(Math.min(arg1, arg2))
@@ -79,35 +79,40 @@
 // x = n * isEven(n -1)
 // return x === 0 ? true : false
 // }
-
+//
+// console.log(isEven(50))
+// console.log(isEven(75))
 // //______________________________________________________________________________
 
 //Challenge 6
 // Bean counting
 
-//The variable for storing the number of letters
-let b = 0
+// //The variable for storing the number of letters
+// let b = 0
+//
+// function countBbs(string) {
+//   //Using a for loop with index, will iterate length of string
+//   for (let i = 0; i < string.length; i++) {
+//     //for each index object in string is equal to B the b variable will add 1
+//     if (string[i] == "B") { b++
+//     }
+//   }// returning the final tally of b to be logged to screen
+//   return b
+// }
+//
+// console.log(countBbs("BeansOnBeansOnBeans"))
 
-function countBbs(string) {
-  //Using a for loop with index, will iterate length of string
-  for (let i = 0; i < string.length; i++) {
-    //for each index object in string is equal to B the b variable will add 1
-    if (string[i] == "B") {b = b +1
-    }
-  }// returning the final tally of b to be logged to screen
-  return b
-}
-// Part 2:
-
-let letr = 0
-
-function countChar(string, letter) {
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] == letter){ letr++
-    }
-  }
-  return letr
-}
-
+// // Part 2:
+//
+// let letr = 0
+//
+// function countChar(string, letter) {
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] == letter){ letr++
+//     }
+//   }
+//   return letr
+// }
+// console.log(countChar("Bean counter beans all day!", "a"))
 
 // //______________________________________________________________________________
