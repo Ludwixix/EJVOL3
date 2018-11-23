@@ -1,4 +1,4 @@
-Eloquent Javascript Volume 3, Challenges.
+Eloquent Javascript Volume 3, Exercises.
 ==
 *Readme and solutions by Sam Ludwig*
 
@@ -64,8 +64,7 @@ while(counter < 100) {
 ### CHESSBOARD
 ###### *(page: 38)*
 
-###### Write a program that creates a string that represents an 8x8 grid, using newline characters to separate lines.
-* At each position if the grid there is either a space or a "#" character. The characters should form a chessboard.
+###### Write a program that creates a string that represents an 8x8 grid, using newline characters to separate lines.At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
 * Passing this string to console.log should show something like this:
 
 ```

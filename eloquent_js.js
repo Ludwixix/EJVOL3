@@ -1,3 +1,5 @@
+// Program Structure
+
 // //Challenge 1
 // // Looping a triangle
 //
@@ -37,6 +39,7 @@
 
 //Challenge 3
 // CHESSBOARD
+
 // while (true) {
 //
 // }
@@ -47,12 +50,29 @@
 //   counter = counter +1
 // }
 
-let grid2 = " # # # #"
-let grid1 = "# # # # "
-let counter = 0
+// let grid2 = " # # # #"
+// let grid1 = "# # # # "
+// let counter = 0
+//
+// while (counter < 4) {
+//   console.log(grid2)
+//   console.log(grid1)
+//   counter = counter +1
+// }
+//
+// let size = 8
 
-while (counter < 4) {
-  console.log(grid2)
-  console.log(grid1)
-  counter = counter +1
+// //______________________________________________________________________________
+
+// FUNCTIONS
+
+//Challenge 1
+// minimum
+
+//Setting my function to a var named min which has 2 parameters.
+let min = function(arg1, arg2){
+  // Math.min takes 2 arguments from the min function and logs the smaller number.
+  console.log(Math.min(arg1, arg2))
 }
+// I call my function with arguments.
+min(223423,3223432580)
