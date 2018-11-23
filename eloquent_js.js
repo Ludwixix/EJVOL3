@@ -1,20 +1,20 @@
 // Program Structure
 
-// //Challenge 1
-// // Looping a triangle
-//
-// //Setting empty triangle variable.
+//Challenge 1
+// Looping a triangle
+
+// // Setting empty triangle variable.
 // let triangle = ""
 // // while loop iterates while triangle length is less than 7.
 // // Each iteration while less than 7 adds 1 # to the triangle string
 // while(triangle.length < 7){ triangle = triangle +"#"
 // console.log(triangle)
 // }
-//
-// // ______________________________________________________________________________
-//
-// //Challenge 2
-// // FIZZBUZZ
+
+// ______________________________________________________________________________
+
+//Challenge 2
+// FIZZBUZZ
 //
 // //Defining my variables. Counter and number
 // let number = 0
@@ -35,20 +35,10 @@
 //     console.log(number)
 //   }
 // }
-// //______________________________________________________________________________
+//______________________________________________________________________________
 
 //Challenge 3
-// CHESSBOARD
-
-// while (true) {
-//
-// }
-// let grid = ""
-// let counter = 0
-// while(counter < 4){
-//   grid = grid +" #"
-//   counter = counter +1
-// }
+//CHESSBOARD
 
 // let grid2 = " # # # #"
 // let grid1 = "# # # # "
@@ -59,18 +49,16 @@
 //   console.log(grid1)
 //   counter = counter +1
 // }
-//
-// let size = 8
 
 // //______________________________________________________________________________
 
 // FUNCTIONS
 
-//Challenge 1
-// minimum
-
-//Setting my function to a var named min which has 2 parameters.
-let min = function(arg1, arg2){
+// //Challenge 1
+// // minimum
+//
+//creating my function named min which has 2 parameters.
+function min (arg1, arg2){
   // Math.min takes 2 arguments from the min function and logs the smaller number.
   console.log(Math.min(arg1, arg2))
 }
