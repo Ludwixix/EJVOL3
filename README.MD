@@ -99,7 +99,7 @@ while (counter < 4) {
 ##### Challenge 4:
 ### MINIMUM
 ###### *(page: 55)*
-The previous chapter introduced the standard function Math.min that returns its smalles argument
+The previous chapter introduced the standard function Math.min that returns its smallest argument
 * Write a function min that takes two arguments and returns their minimum
 
 ```
@@ -107,4 +107,25 @@ function(arg1, arg2){
 console.log(Math.min(arg1, arg2))
 }
 min(223423,3223432580)
+```
+
+---
+
+##### Challenge 5:
+### RECURSION
+###### *(page: 55)*
+Define a recursive function isEven corresponding to this description.
+* The function should accept a single parameter (a positive, whole number) and return a Boolean
+* Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
+
+*Recursion can only be used on negative numbers if the termination condition is set below the input number.
+You could use a plus+ in your recursion as opposed to -minus when using a -negative number*
+
+```
+function isEven(n){
+  if (n < 0) return
+  if (n === 0) return 1
+    x = n * isEven(n -1)
+  return x === 0 ? true : false
+}
 ```

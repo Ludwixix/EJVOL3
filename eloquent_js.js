@@ -54,13 +54,28 @@
 
 // FUNCTIONS
 
-// //Challenge 1
+// //Challenge 4
 // // minimum
 //
 //creating my function named min which has 2 parameters.
-function min (arg1, arg2){
-  // Math.min takes 2 arguments from the min function and logs the smaller number.
-  console.log(Math.min(arg1, arg2))
+// function min (arg1, arg2){
+//   // Math.min takes 2 arguments from the min function and logs the smaller number.
+//   console.log(Math.min(arg1, arg2))
+// }
+// // I call my function with arguments.
+// min(223423,3223432580)
+
+// //______________________________________________________________________________
+
+// Challenge 5
+// RECURSION - Is esentially counting down within a function
+
+function isEven(n){
+//Termination
+  if (n < 0) return
+// BASE
+  if (n === 0) return 1
+// Recursion
+x = n * isEven(n -1)
+return x === 0 ? true : false
 }
-// I call my function with arguments.
-min(223423,3223432580)
