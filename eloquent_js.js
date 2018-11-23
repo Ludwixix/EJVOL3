@@ -70,12 +70,44 @@
 // Challenge 5
 // RECURSION - Is esentially counting down within a function
 
-function isEven(n){
-//Termination
-  if (n < 0) return
-// BASE
-  if (n === 0) return 1
-// Recursion
-x = n * isEven(n -1)
-return x === 0 ? true : false
+// function isEven(n){
+// //Termination
+//   if (n < 0) return
+// // BASE
+//   if (n === 0) return 1
+// // Recursion
+// x = n * isEven(n -1)
+// return x === 0 ? true : false
+// }
+
+// //______________________________________________________________________________
+
+//Challenge 6
+// Bean counting
+
+//The variable for storing the number of letters
+let b = 0
+
+function countBbs(string) {
+  //Using a for loop with index, will iterate length of string
+  for (let i = 0; i < string.length; i++) {
+    //for each index object in string is equal to B the b variable will add 1
+    if (string[i] == "B") {b = b +1
+    }
+  }// returning the final tally of b to be logged to screen
+  return b
 }
+// Part 2:
+
+let letr = 0
+
+function countChar(string, letter) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == letter){ letr++
+    }
+  }
+  return letr
+}
+
+
+// //______________________________________________________________________________

@@ -101,7 +101,7 @@ while (counter < 4) {
 ###### *(page: 55)*
 The previous chapter introduced the standard function Math.min that returns its smallest argument
 * Write a function min that takes two arguments and returns their minimum
-
+###### Solution:
 ```
 function(arg1, arg2){
 console.log(Math.min(arg1, arg2))
@@ -120,7 +120,7 @@ Define a recursive function isEven corresponding to this description.
 
 *Recursion can only be used on negative numbers if the termination condition is set below the input number.
 You could use a plus+ in your recursion as opposed to -minus when using a -negative number*
-
+###### Solution:
 ```
 function isEven(n){
   if (n < 0) return
@@ -128,4 +128,40 @@ function isEven(n){
     x = n * isEven(n -1)
   return x === 0 ? true : false
 }
+```
+
+---
+
+##### Challenge 6:
+### Bean Counting
+###### *(page: 56)*
+Write a function countBbs that takes a string as its only argument and returns a number that indicates how many uppercase "B" characters there are in the string.
+###### Solution:
+```
+let b = 0
+
+function countBbs(string) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == "B") {b = b +1
+    }
+  }
+  return b
+}
+```
+
+`Part 2:`
+Next, write a function called countChar that behaves like count Bbs, except it takes a second argument that indicates the character that is to be counted.
+###### Solution:
+```
+
+let letr = 0
+
+function countChar(string, letter) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == letter){ letr++
+    }
+  }
+  return letr
+}
+
 ```
