@@ -245,3 +245,4 @@ function sumOfRanges(start, end) {
 }
 console.log(sumOfRanges(1, 10));
 ```
+Test
