@@ -220,7 +220,6 @@ Write a range function that takes two arguments, _start_ and _end_, and returns 
 ```
 function sumOfRange(start, end) {
   arr = [start];
-   start each time.
   while (start !== end) {
     start++;
     arr.push(start);
