@@ -210,7 +210,7 @@ function countChar(string, letter) {
 ##### Challenge 7:
 
 ### The Sum Of A Range
-
+`Part 1`
 ###### _(page: 79)_
 
 Write a range function that takes two arguments, _start_ and _end_, and returns an array containing all the numbers from _start_ up to (and including) _end_.
@@ -245,4 +245,26 @@ function sumOfRanges(start, end) {
 }
 console.log(sumOfRanges(1, 10));
 ```
-Test
+`Part 2`
+
+Write a sum function that takes an array of numbers and returns the sum of these numbers.
+
+```
+function sumOfNum(arr) {
+  num = 0
+  for (var i = 0; i < arr.length; i++) {
+    num += arr[i]
+  }
+  return num
+}
+console.log(sumOfNum([12, 2, 3]))
+```
+
+`Part 3`     *Bonus Question:*
+
+* Modify your range function to take an optional third argument that indicates the "step" value used when building the array.
+
+* If no step is given, the elements go up by increments of one, corresponding to the old behaviour.
+* The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]
+
+* Make sure it also works with negative step values so that range (5,2,-1) produces [5,4,3,2].

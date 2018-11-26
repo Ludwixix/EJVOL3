@@ -119,33 +119,46 @@
 //Challenge 7
 // The Sum Of A Range
 
+//Part1
+
 //METHOD 2
-function sumOfRange(start, end) {
-// Array is made containing starting value of array
-  arr = [start];
-  // While start is lower than end loop will run adding 1 to start each time.
-  while (start !== end) {
-    start++;
-    // Result of start +1 is pushed to array each iteration.
-    arr.push(start);
-  }
-  // Checks if start is equal to end and returns arr.
-  if (start == end) {
-    return arr;
-  }
-}
-console.log(sumOfRange(1, 10));
+// function sumOfRange(start, end) {
+// // Array is made containing starting value of array
+//   arr = [start];
+//   // While start is lower than end loop will run adding 1 to start each time.
+//   while (start !== end) {
+//     start++;
+//     // Result of start +1 is pushed to array each iteration.
+//     arr.push(start);
+//   }
+//   // Checks if start is equal to end and returns arr.
+//   if (start == end) {
+//     return arr;
+//   }
+// }
+// console.log(sumOfRange(324, 1024));
+//
+// //Alternative.
+// //Using true or false function.
+// function derp(start, end) {
+//   arr = [start];
+//   while (start !== end ? true : false) {
+//     start++;
+//     arr.push(start);
+//   }
+//   return arr;
+// }
+// console.log(derp(1, 10));
 
-//METHOD 1
-//Using true or false function.
-function derp(start, end) {
-  arr = [start];
-  while (start !== end ? true : false) {
-    start++;
-    arr.push(start);
-  }
-  return arr;
-}
-console.log(derp(1, 10));
+// Part 2
 
-Test
+// function sumOfNum(arr) {
+//   num = 0
+//   for (var i = 0; i < arr.length; i++) {
+//     num += arr[i]
+//   }
+//   return num
+// }
+// console.log(sumOfNum([12, 2, 3]))
+
+// Part 3 *Bonus Challenge*
