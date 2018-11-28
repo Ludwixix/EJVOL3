@@ -162,3 +162,29 @@
 // console.log(sumOfNum([12, 2, 3]))
 
 // Part 3 *Bonus Challenge*
+
+function sumOfRange(start, end, step) {
+
+  arr = [start];
+
+  if (step < 0) {
+    step = step * -1;
+    while (end < start) {
+      start -= step;
+      arr.push(start);
+    }
+  } else if (step >= 1) {
+    while (start <= end) {
+      start += step;
+      arr.push(start);
+    }
+  } else {
+    while (start <= end) {
+      start++;
+      arr.push(start);
+    }
+  }
+  return arr;
+}
+
+console.log(sumOfRange(10, 1, -2));
