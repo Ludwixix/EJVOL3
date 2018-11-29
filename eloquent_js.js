@@ -165,26 +165,30 @@
 
 function sumOfRange(start, end, step) {
 
-  arr = [start];
-
+  arrStart = [];
+  // The minus step loop
   if (step < 0) {
     step = step * -1;
-    while (end < start) {
+    while (end <= start) {
+      arrStart.push(start);
       start -= step;
-      arr.push(start);
     }
-  } else if (step >= 1) {
-    while (start <= end) {
-      start += step;
-      arr.push(start);
+    // The plus step loop
+  } else if (step > 0) {
+    while (end <= start) {
+      arrStart.push(end);
+      end += step;
     }
+    // The no step loop
   } else {
-    while (start <= end) {
-      start++;
-      arr.push(start);
+    while (end <= start) {
+      arrStart.push(end);
+      end++;
     }
   }
-  return arr;
+  return arrStart;
 }
 
-console.log(sumOfRange(10, 1, -2));
+console.log(sumOfRange(20, 1, -1));
+console.log(sumOfRange(20, 1, 1));
+console.log(sumOfRange(20, 1, ));
