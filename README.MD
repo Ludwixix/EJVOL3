@@ -210,13 +210,15 @@ function countChar(string, letter) {
 ##### Challenge 7:
 
 ### The Sum Of A Range
+
 `Part 1`
+
 ###### _(page: 79)_
 
 Write a range function that takes two arguments, _start_ and _end_, and returns an array containing all the numbers from _start_ up to (and including) _end_.
 
-
 ###### Solution
+
 ```
 function sumOfRange(start, end) {
   arr = [start];
@@ -231,8 +233,8 @@ function sumOfRange(start, end) {
 console.log(sumOfRange(1, 10));
 ```
 
+_Same function with a slight varitation using true or false._
 
-*Same function with a slight varitation using true or false operator. resulting in cleaner code*
 ```
 function sumOfRanges(start, end) {
   arr = [start];
@@ -244,6 +246,7 @@ function sumOfRanges(start, end) {
 }
 console.log(sumOfRanges(1, 10));
 ```
+
 `Part 2`
 
 Write a sum function that takes an array of numbers and returns the sum of these numbers.
@@ -259,11 +262,41 @@ function sumOfNum(arr) {
 console.log(sumOfNum([12, 2, 3]))
 ```
 
-`Part 3`     *Bonus Question:*
+`Part 3` _Bonus Question:_
 
-* Modify your range function to take an optional third argument that indicates the "step" value used when building the array.
+- Modify your range function to take an optional third argument that indicates the "step" value used when building the array.
 
-* If no step is given, the elements go up by increments of one, corresponding to the old behaviour.
-* The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]
+- If no step is given, the elements go up by increments of one, corresponding to the old behaviour.
 
-* Make sure it also works with negative step values so that range (5,2,-1) produces [5,4,3,2].
+- Make sure it also works with negative step values.
+
+##### Solution:
+
+```
+function sumOfRange(start, end, step) {
+
+  arrStart = [];
+  // The minus step loop
+  if (step < 0) {
+    step = step * -1;
+    while (end <= start) {
+      arrStart.push(start);
+      start -= step;
+    }
+    // The plus step loop
+  } else if (step > 0) {
+    while (end <= start) {
+      arrStart.push(end);
+      end += step;
+    }
+    // The no step loop
+  } else {
+    while (end <= start) {
+      arrStart.push(end);
+      end++;
+    }
+  }
+  return arrStart;
+}
+
+```

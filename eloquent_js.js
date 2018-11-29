@@ -189,6 +189,6 @@ function sumOfRange(start, end, step) {
   return arrStart;
 }
 
-console.log(sumOfRange(20, 1, -1));
-console.log(sumOfRange(20, 1, 1));
+console.log(sumOfRange(10, 1, 2));
+console.log(sumOfRange(5, 2, -1));
 console.log(sumOfRange(20, 1, ));
